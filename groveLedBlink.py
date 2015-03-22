@@ -22,7 +22,7 @@ while True:
     digitalWrite(LED, LOW)  #Send LOW to switch on LED
     time.sleep(SECONDS)
     
-    except KeyboardInterrrupt:  #turn LED off before stopping
+    except KeyboardInterrupt:  #turn LED off before stopping
       digitalWrite(LED, LOW)
       break
     except IOError: #Print "Error" if commuication error encountered
