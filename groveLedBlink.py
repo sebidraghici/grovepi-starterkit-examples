@@ -25,5 +25,5 @@ while True:
     except KeyboardInterrrupt:  #turn LED off before stopping
       digitalWrite(LED, LOW)
       break
-    execpt IOError: #Print "Error" if commuication error encountered
+    except IOError: #Print "Error" if commuication error encountered
       print "IOError encountered"
