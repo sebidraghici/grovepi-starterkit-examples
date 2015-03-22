@@ -22,8 +22,8 @@ while True:
     digitalWrite(LED, LOW)  #Send LOW to switch on LED
     time.sleep(SECONDS)
     
-    except KeyboardInterrupt:  #turn LED off before stopping
-      digitalWrite(LED, LOW)
-      break
-    except IOError: #Print "Error" if commuication error encountered
-      print "IOError encountered"
+  except KeyboardInterrupt:  #turn LED off before stopping
+    digitalWrite(LED, LOW)
+    break
+  except IOError: #Print "Error" if commuication error encountered
+    print "IOError encountered"
